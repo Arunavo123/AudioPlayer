@@ -1,0 +1,136 @@
+/* importing google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+nav{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* all the items in body will not have any margine and padding */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: tan;
+}
+/* 
+below are the example by which any item under any class can be targeted. 
+Here that image has been targeted by its parent class-brand, though the image doesn't have any class */
+.brand img{
+    height: 40px;
+    padding: 0px 5px;
+}
+nav ul{
+    /* 1. by doing display as flex the items will come horizontally
+    2. by doing list style type-none the dots(dots which came by doing "ul") will be removed*/
+    display: flex;
+    list-style-type: none;
+    height: 50px;
+    background-color: black;     
+    color: white;
+}
+nav ul li{
+    padding: 18px 8px;
+    cursor: pointer;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-size: 1.3 rem;
+    color: white;
+    font-weight: bold;
+}
+.container{
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    width: 70%;
+    border-radius: 12px;
+    margin: 23px auto;
+    padding: 34px;
+    background-image: url('./bgif.jpg');
+    background-repeat: no-repeat;
+}
+h3{
+    margin-left: 10px;
+}
+.bottom{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    height: 80px;
+    position: sticky;
+    align-items: center;
+    bottom: 0;
+    color: white;
+    flex-direction: column;
+}
+#myProgressBar{
+    width: 80vw;
+    position: relative;
+    top: 35px;
+    margin-bottom: 26px;
+}
+.icons{
+    margin: 17px;
+    cursor: pointer;
+}
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: chartreuse;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    border-radius: 10px;
+    position: relative;
+    right: 410px;
+    margin-top: 35px;
+}
+.songItem img{
+    height: 50px;
+    width: 58px;
+    border-radius: 5px;
+}
+.timestamp{
+    margin: 23px;
+    position: relative;
+    top: 16px;
+    font-weight: bold;
+}
+.songName{
+    position: relative;
+    top: 15px;
+    left: 5px;
+    font-weight: bold;
+}
+.songInfo{
+    position: relative;
+    right: 457px;
+    bottom: 50px;
+}
+.songInfo img{
+    width: 5vw;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+.endtime{
+    position: relative;
+    left: 945px;
+    bottom: 30px;
+}
+#masterSongName{
+    font-family: 'Varela Round', sans-serif;
+}
+#gif{
+    position: relative;
+    right: 9px;
+    top: 5px;
+}
+
+
+
+
+
